@@ -1,0 +1,140 @@
+body{
+    background-color:white;
+}
+
+.f1{
+  background-color: lightgrey;
+    width: 300px;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 45px;
+    position: absolute;
+    top: 90px;
+    left: 560px;
+
+}
+
+.f2{
+  width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;
+    height: 20px;
+    top:561px;
+    left:886px;
+    position: absolute;
+    
+}
+
+.button-ff1
+{
+  position: absolute;
+  top:570px;
+  left:890px;
+  float: right;
+}
+.button-ff2
+{
+  position: absolute;
+  top:570px;
+  left:984px;
+  float: right;
+}
+.button-ff3
+{
+  position: absolute;
+  top:570px;
+  left:1070px;
+  float: right;
+}
+.button-ff4
+{
+  position: absolute;
+  top:570px;
+  left:1150px;
+  float: right;
+}
+
+.header{
+    width:1600px;
+    height:85px;
+    margin:auto;
+	
+}
+
+.header-text{
+	position: absolute;
+    top: 0px;
+    left: 20px;
+	color:white;
+	font-size:2em;
+    text-shadow: 5px 5px 10px black;}
+.header-textp{
+	position: absolute;
+    top: 20px;
+    left: 28px;
+	color:white;
+	font-size:2em;
+    text-shadow: 5px 5px 10px black;}
+
+
+
+
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+	
+}
+.div1{
+    border: 1px solid black;
+	width:1000px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 130px;
+    height: 100px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 0px;
+    height:200px;
+    width: 360px;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
