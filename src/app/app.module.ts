@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { GrammarNoteComponent } from './grammar-note/grammar-note.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
-  { path: 'heroes', component: GrammarNoteComponent }
+  { path: 'GrammarNotes', component: GrammarNoteComponent }
 ];
 
 @NgModule({
@@ -16,7 +16,8 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

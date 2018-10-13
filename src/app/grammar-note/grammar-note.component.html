@@ -1,8 +1,32 @@
-
 <div class="div1">
-  <div class="header">
-    <img src="../assets/images/image 72.png">
-    <h1 class="header-text">GrammerNotes</h1>
-    <p class="header-textp">Level Two</p>
-  </div>
+    <div class="">
+        <div class="header">
+            <img src="../assets/images/image 72.png" style="width: 1003px; height:85px;">
+            <h1 class="header-text">GrammerNotes</h1>
+            <p class="header-textp">Level Two</p>
+        </div>
+        <div class="div2">
+
+            <div class="container-fluid">
+
+                <div class="left">
+                    <!-- <ng-container *ngFor="let val of images; let i = index;">
+                        <div class="col1">
+                            <img src="{{val}}" class="img-fluid">
+                        </div>
+                    </ng-container> -->
+                    <ng-container *ngFor="let data of arrImage;">
+
+                    <div class="col1">
+                            <img src="{{data.B}}" class="img-fluid">
+                            <p>{{data.A}}</p>
+                    </div>
+                    </ng-container>
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
