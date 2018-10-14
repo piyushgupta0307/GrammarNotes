@@ -1,154 +1,154 @@
 [
- {
-   "A": "Lesson 1: Correcting Sentence Fragments",
-   "B": "../assets/images/image 104.png"
- },
- {
-   "A": "Lesson 2: Correcting Run-On Sentences",
-   "B": "../assets/images/image 105.png"
- },
- {
-   "A": "Lesson 3: Combining Sentences ",
-   "B": "../assets/images/image 106.png"
- },
- {
-   "A": "Lesson 4: Using Subject-Verb Agreement",
-   "B": "../assets/images/image 107.png"
- },
- {
-   "A": "Lesson 5: Using Pronoun-Antecedent Agreement",
-   "B": "../assets/images/image 108.png"
- },
- {
-   "A": "Lesson 6: Understanding Verb Forms",
-   "B": "../assets/images/image 109.png"
- },
- {
-   "A": "Lesson 7: Mastering Six Troublesome Verbs",
-   "B": "../assets/images/image 110.png"
- },
- {
-   "A": "Lesson 8: Understanding Verb Tense",
-   "B": "../assets/images/image 111.png"
- },
- {
-   "A": "Lesson 9: Using Active and Passive Voice",
-   "B": "../assets/images/image 112.png"
- },
- {
-   "A": "Lesson 10: Using Pronouns Correctly",
-   "B": "../assets/images/image 123.png"
- },
- {
-   "A": "Lesson 11: Using Clear Pronoun Reference",
-   "B": "../assets/images/image 124.png"
- },
- {
-   "A": "Lesson 12: Understanding Modifiers",
-   "B": "../assets/images/image 125.png"
- },
- {
-   "A": "Lesson 13: Understanding Comparison of Modifiers",
-   "B": "../assets/images/image 126.png"
- },
- {
-   "A": "Lesson 14: Correcting Dangling Modifiers",
-   "B": "../assets/images/image 127.png"
- },
- {
-   "A": "Lesson 15: Correcting Misplaced Modifiers",
-   "B": "../assets/images/image 128.png"
- },
- {
-   "A": "Lesson 1: Correcting Sentence Fragments",
-   "B": "../assets/images/image 129.png"
- },
- {
-   "A": "Lesson 2: Correcting Run-On Sentences",
-   "B": "../assets/images/image 130.png"
- },
- {
-   "A": "Lesson 3: Combining Sentences ",
-   "B": "../assets/images/image 131.png"
- },
- {
-   "A": "Lesson 4: Using Subject-Verb Agreement",
-   "B": "../assets/images/image 132.png"
- },
- {
-   "A": "Lesson 5: Using Pronoun-Antecedent Agreement",
-   "B": "../assets/images/image 133.png"
- },
- {
-   "A": "Lesson 6: Understanding Verb Forms",
-   "B": "../assets/images/image 205.png"
- },
- {
-   "A": "Lesson 7: Mastering Six Troublesome Verbs",
-   "B": "../assets/images/image 206.png"
- },
- {
-   "A": "Lesson 8: Understanding Verb Tense",
-   "B": "../assets/images/image 207.png"
- },
- {
-   "A": "Lesson 9: Using Active and Passive Voice",
-   "B": "../assets/images/image 208.png"
- },
- {
-   "A": "Lesson 10: Using Pronouns Correctly",
-   "B": "../assets/images/image 209.png"
- },
- {
-   "A": "Lesson 11: Using Clear Pronoun Reference",
-   "B": "../assets/images/image 210.png"
- },
- {
-   "A": "Lesson 12: Understanding Modifiers",
-   "B": "../assets/images/image 211.png"
- },
- {
-   "A": "Lesson 13: Understanding Comparison of Modifiers",
-   "B": "../assets/images/image 212.png"
- },
- {
-   "A": "Lesson 14: Correcting Dangling Modifiers",
-   "B": "../assets/images/image 213.png"
- },
- {
-   "A": "Lesson 15: Correcting Misplaced Modifiers",
-   "B": "../assets/images/image 214.png"
- },
- {
-   "A": "Lesson 1: Correcting Sentence Fragments",
-   "B": "../assets/images/image 215.png"
- },
- {
-   "A": "Lesson 2: Correcting Run-On Sentences",
-   "B": "../assets/images/image 216.png"
- },
- {
-   "A": "Lesson 3: Combining Sentences ",
-   "B": "../assets/images/image 217.png"
- },
- {
-   "A": "Lesson 4: Using Subject-Verb Agreement",
-   "B": "../assets/images/image 218.png"
- },
- {
-   "A": "Lesson 5: Using Pronoun-Antecedent Agreement",
-   "B": "../assets/images/image 219.png"
- },
- {
-   "A": "Lesson 6: Understanding Verb Forms",
-   "B": "../assets/images/image 220.png"
- },
- {
-   "A": "Lesson 7: Mastering Six Troublesome Verbs",
-   "B": "../assets/images/image 263.png"
- },
- {
-   "A": "Lesson 8: Understanding Verb Tense",
-   "B": "../assets/images/image 264.png"
- }
+	{
+		"title": "Lesson 1: Correcting Sentence Fragments",
+		"path": "../assets/images/lesson1.png"
+	},
+	{
+		"title": "Lesson 2: Correcting Run-On Sentences",
+		"path": "../assets/images/lesson2.png"
+	},
+	{
+		"title": "Lesson 3: Combining Sentences ",
+		"path": "../assets/images/lesson3.png"
+	},
+	{
+		"title": "Lesson 4: Using Subject-Verb Agreement",
+		"path": "../assets/images/lesson4.png"
+	},
+	{
+		"title": "Lesson 5: Using Pronoun-Antecedent Agreement",
+		"path": "../assets/images/lesson5.png"
+	},
+	{
+		"title": "Lesson 6: Understanding Verb Forms",
+		"path": "../assets/images/lesson6.png"
+	},
+	{
+		"title": "Lesson 7: Mastering Six Troublesome Verbs",
+		"path": "../assets/images/lesson7.png"
+	},
+	{
+		"title": "Lesson 8: Understanding Verb Tense",
+		"path": "../assets/images/lesson8.png"
+	},
+	{
+		"title": "Lesson 9: Using Active and Passive Voice",
+		"path": "../assets/images/lesson9.png"
+	},
+	{
+		"title": "Lesson 10: Using Pronouns Correctly",
+		"path": "../assets/images/lesson10.png"
+	},
+	{
+		"title": "Lesson 11: Using Clear Pronoun Reference",
+		"path": "../assets/images/lesson11.png"
+	},
+	{
+		"title": "Lesson 12: Understanding Modifiers",
+		"path": "../assets/images/lesson12.png"
+	},
+	{
+		"title": "Lesson 13: Understanding Comparison of Modifiers",
+		"path": "../assets/images/lesson13.png"
+	},
+	{
+		"title": "Lesson 14: Correcting Dangling Modifiers",
+		"path": "../assets/images/lesson14.png"
+	},
+	{
+		"title": "Lesson 15: Correcting Misplaced Modifiers",
+		"path": "../assets/images/lesson15.png"
+	},
+	{
+		"title": "Lesson 16: Understanding Usage",
+		"path": "../assets/images/lesson16.png"
+	},
+	{
+		"title": "Lesson 17: Using Capital Letters",
+		"path": "../assets/images/lesson17.png"
+	},
+	{
+		"title": "Lesson 18: Using End Marks",
+		"path": "../assets/images/lesson18.png"
+	},
+	{
+		"title": "Lesson 19: Using Commas",
+		"path": "../assets/images/lesson19.png"
+	},
+	{
+		"title": "Lesson 20: Using Semicolons",
+		"path": "../assets/images/lesson20.png"
+	},
+	{
+		"title": "Lesson 21: Using Colons",
+		"path": "../assets/images/lesson21.png"
+	},
+	{
+		"title": "Lesson 22: Using Quotation Marks",
+		"path": "../assets/images/lesson22.png"
+	},
+	{
+		"title": "Lesson 23: Using Apostrophes",
+		"path": "../assets/images/lesson23.png"
+	},
+	{
+		"title": "Lesson 24: Improving Your Spelling",
+		"path": "../assets/images/lesson24.png"
+	},
+	{
+		"title": "Lesson 25: Writing with Detail: Prepositional Phrases",
+		"path": "../assets/images/lesson25.png"
+	},
+	{
+		"title": "Lesson 26: Writing with Detail: Adverbials and...",
+		"path": "../assets/images/lesson26.png"
+	},
+	{
+		"title": "Lesson 27: Writing with Concord: Parallel Structure",
+		"path": "../assets/images/lesson27.png"
+	},
+	{
+		"title": "Lesson 28: Controlling Pace and Creating Drama with...",
+		"path": "../assets/images/lesson28.png"
+	},
+	{
+		"title": "Lesson 29: Writing with Special Focus: Postponing...",
+		"path": "../assets/images/lesson29.png"
+	},
+	{
+		"title": "Lesson 30: Writing with Liveliness: Strong Action ..",
+		"path": "../assets/images/lesson30.png"
+	},
+	{
+		"title": "Lesson 31: Writing to Achieve Cohesion",
+		"path": "../assets/images/lesson31.png"
+	},
+	{
+		"title": "Grammar and Usage 1",
+		"path": "../assets/images/lesson32.png"
+	},
+	{
+		"title": "Mechanics 1",
+		"path": "../assets/images/lesson33.png"
+	},
+	{
+		"title": "Grammar and Usage 2",
+		"path": "../assets/images/lesson34.png"
+	},
+	{
+		"title": "Mechanics 2",
+		"path": "../assets/images/lesson35.png"
+	},
+	{
+		"title": "About GrammarNotes",
+		"path": "../assets/images/lesson36.png"
+	},
+	{
+		"title": "Customizing GrammarNotes",
+		"path": "../assets/images/lesson37.png"
+	},
+	{
+		"title": "Grammar Glossary",
+		"path": "../assets/images/lesson38.png"
+	}
 ]

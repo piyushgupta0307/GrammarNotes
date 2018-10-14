@@ -10,7 +10,6 @@ export class GrammarNoteComponent  {
   title = 'JSON to Table Example';
   constructor (private httpService: HttpClient) { }
   arrImage: string [];
-
   ngOnInit() { this.httpService.get('./assets/data/data.json').subscribe(
     data => {
       this.arrImage = data as string [];	 // FILL THE ARRAY WITH DATA.

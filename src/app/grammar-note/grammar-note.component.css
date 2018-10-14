@@ -22,38 +22,48 @@ h1 {
 
 .header-textp{
 	position: absolute;
-    top: 20px;
+    top: 40px;
     left: 28px;
 	color:white;
 	font-size:2em;
-    text-shadow: 5px 5px 10px black;
+    font-size:32px;
 }
 
 .header-text{
 	position: absolute;
-    top: 0px;
-    left: 20px;
+    top: 20px;
+    left: 25px;
 	color:white;
-	font-size:2em;
-    text-shadow: 5px 5px 10px black;}
+    font-size:1.8em;
+}
     
     
     .col1{
         float: left;
         height: 100px;
-        width: 100px;
-        padding: 0px 4px 3px 10px;
+        width: 140px;
+        padding: 5px 4px 3px 5px;
         
        
     }
     .left{
-        margin-top: 5px;
-        padding-top: 5px;
-        height: 500px;
-        width: 550px;
+        margin-top: 8px;
+        padding: 5px 0px 0px 5px;
+        height: 540px;
+        width: 570px;
         border-top: 1px solid black; 
         border-left: 1px solid black;
         border-right: 1px solid black;
         border-bottom: 1px solid black;
     }
-  
+  .ptitle{
+     font-size: 9px;
+}
+.player{
+background-color:lightblue;
+height: 200px;
+width: 380px;
+position:absolute;
+top:115px;
+right: 355px;
+}
