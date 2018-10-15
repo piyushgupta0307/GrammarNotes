@@ -62,6 +62,7 @@ h1 {
 .player{
 background-color:lightblue;
 height: 200px;
+position: absolute;
 width: 380px;
 position:absolute;
 top:115px;

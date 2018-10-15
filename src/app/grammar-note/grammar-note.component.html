@@ -1,7 +1,7 @@
 <div class="div1">
         <div class="header">
             <img src="../assets/images/image 72.png" style="width: 1003px; height:85px;">
-            <h1 class="header-text">GrammerNotes</h1>
+            <p class="header-text">GrammerNotes</p>
             <p class="header-textp">Level Two</p>
         </div>
                     <div class="left">
@@ -10,18 +10,22 @@
                             <img src="{{val}}" class="img-fluid">
                         </div>
                     </ng-container> -->
-                    <ng-container *ngFor="let data of arrImage;">
+                    <ng-container *ngFor="let data of arrImage | paginate: { itemsPerPage:20, currentPage: p }">
 
                     <div class="col1">
                             <img src="{{data.path}}" class="img-fluid">
                             <p class="ptitle">{{data.title}}</p>
                     </div>
+                    
                     </ng-container>
+                   
+                    <pagination-controls (pageChange)="p=$event"></pagination-controls>
                     
                 </div>
+                <a href="#">Credits</a>
                 <div class="player"></div>
                 <p>Please select a presentation from the gallary on the left.</p>
             <div></div>
-                 <a href="#">Credits</a>
+                 
      
 </div>
