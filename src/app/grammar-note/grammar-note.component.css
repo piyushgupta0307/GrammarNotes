@@ -1,24 +1,22 @@
-.header{
-    width:666px;
-    height:90px;
-}
-
-.div1{
-    margin-top: 8px;
-    margin-left: 8px;
+.main{
+    margin-top: 5px;
+    margin-left: 4px;
     border-top: 1px solid gainsboro;
     height: 668px;
+    width: 1014px;
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    width: 1014px;
 }
 
-h1 {
+.div1{
+    margin-top: -1px;
+    width: 
+}
+h1{
     font-size: 50px;
     word-break: break-all;
 }
-
 
 .header-textp{
 	position: absolute;
@@ -36,35 +34,69 @@ h1 {
 	color:white;
     font-size:1.8em;
 }
-    
-    
-    .col1{
-        float: left;
-        height: 100px;
-        width: 140px;
-        padding: 5px 4px 3px 5px;
-        
-       
-    }
-    .left{
-        margin-top: 8px;
-        padding: 5px 0px 0px 5px;
-        height: 540px;
-        width: 570px;
-        border-top: 1px solid black; 
-        border-left: 1px solid black;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-  .ptitle{
-     font-size: 9px;
+.col1{
+    float: left;
+    height: 100px;
+    width: 140px;
+    padding: 5px 4px 3px 5px;
 }
-.player{
-background-color:lightblue;
-height: 200px;
-position: absolute;
-width: 380px;
-position:absolute;
-top:115px;
-right: 355px;
+/*
+.left{
+    height: 540px;
+    max-width: 570px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top:5px;
+    padding-left: 7px;
+    border-top: 1px solid black; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}  */
+.ptitle{
+    font-size: 10px;
+}
+.right{
+    height: 540px;
+    width:300px;
+}
+
+.d2left{
+    float: left;
+    height: 540px;
+    width: 570px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top:5px;
+    padding-left: 7px;
+    border-top: 1px solid black; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.d2right{
+    float: right;
+    margin-top: 11px;
+    margin-right: 5px; 
+    height: 540px;
+    width:420px;
+}
+.d2media{
+    height: 269px;
+    border-top: 1px solid black; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.d2rct{
+    height: 269px;
+    margin-top:2px; 
+    border-top: 1px solid black; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.pagn1{
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
