@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { GrammarNoteComponent } from './grammar-note/grammar-note.component';
 import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
+
 const routes: Routes = [
   { path: 'GrammarNotes', component: GrammarNoteComponent }
 ];

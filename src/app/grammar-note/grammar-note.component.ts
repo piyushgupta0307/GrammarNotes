@@ -5,7 +5,8 @@ import { NgxPaginationModule} from 'ngx-pagination';
 @Component({
   selector: 'app-grammar-note',
   templateUrl: './grammar-note.component.html',
-  styleUrls: ['./grammar-note.component.css']
+  styleUrls: ['./grammar-note.component.css'],
+
 })
 export class GrammarNoteComponent  {
   title = 'JSON to Table Example';

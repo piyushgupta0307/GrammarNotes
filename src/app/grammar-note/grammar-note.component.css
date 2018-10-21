@@ -100,3 +100,32 @@ h1{
     padding-right: 10px;
     padding-bottom: 5px;
 }
+
+.collapsible {
+    background-color:lightgray;
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  .radio{
+font-size:13px;
+  }
+  
