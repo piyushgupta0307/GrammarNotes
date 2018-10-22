@@ -91,14 +91,30 @@ h1{
 .d2rct{
     height: 269px;
     margin-top:2px; 
-    border-top: 1px solid black; 
+  /*   border-top: 1px solid black; 
     border-left: 1px solid black;
     border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid black; */
 }
 .pagn1{
     padding-right: 10px;
     padding-bottom: 5px;
+    
+}
+
+.b1 {
+    margin-left: 4px;
+    width: 400px;
+    font-family: 'Arial Bold', sans-serif;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left:4px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .collapsible {
@@ -128,4 +144,17 @@ h1{
   .radio{
 font-size:13px;
   }
-  
+#collapseExample{
+    margin-left: 10px;
+}
+#collapseExample1{
+    margin-left: 10px;
+}
+
+.topb1{
+    margin-top: 4px;
+}
+
+.down{
+    margin-left: 250px;
+}

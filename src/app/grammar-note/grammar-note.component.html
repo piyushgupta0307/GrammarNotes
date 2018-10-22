@@ -21,19 +21,15 @@
 
         <div class="d2right">
             <div class="d2media">
-                <p></p>
+                <p>This is video</p>
             </div>
             <div class="d2rct">
-                <div class="drop1">
-                    
-                </div>
-                <div class="drop2">
-                        <p>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                  Download This Presentation
-                                </a>
-                            
-                              </p>
+                            <div class="topb">
+                              <div class="b1" data-toggle="collapse"
+                                  (click)="toggleSign()"
+                                  href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
+                                  <span class="glyphicon glyphicon-{{sign}}"></span> Download This Presentation
+                              </div>
                               <div class="collapse" id="collapseExample">
                                     <form>
                                             <div class="radio">
@@ -44,33 +40,34 @@
                                             </div>
                                             <div class="radio">
                                               <label><input type="radio" name="optradio">Keynote</label>
-                                              <button type="button" class="btn btn-default">Download</button>
+                                              <button type="button" class="down">Download</button>
                                             </div>
                                           </form>
                               </div>   
-                              <p>
-                                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
-                                  Handouts
-                                </a>
-                            
-                              </p>
+                            </div>
+                            <div class="topb1">
+                              <div class="b1" data-toggle="collapse"
+                                (click)="toggleSigni()" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                  <span class="glyphicon glyphicon-{{sign1}}"></span>Handouts
+                              </div>
                               <div class="collapse" id="collapseExample1">
                                     <form>
                                             <div class="radio">
-                                              <label><input type="radio" name="optradio" checked>PowerPoint (Windows)</label>
+                                              <label><input type="radio" name="optradio" checked>On your own activities</label>
                                             </div>
                                             <div class="radio">
-                                              <label><input type="radio" name="optradio">PowerPoint (Mac)</label>
+                                              <label><input type="radio" name="optradio">Practice activities</label>
                                             </div>
                                             <div class="radio">
-                                              <label><input type="radio" name="optradio">Keynote</label>
-                                              <button type="button" class="btn btn-default">Download</button>
+                                              <label><input type="radio" name="optradio">Reviews</label>
+                                              <button type="button" class="down">Download</button>
                                             </div>
                                           </form>
-                              </div>     
-                </div>
+                              </div> 
+                            </div>      
             </div>
         </div>
-    </div>
+    </div> 
 </div>
 
+<p>Search icon: <span class="glyphicon glyphicon-search"></span></p>

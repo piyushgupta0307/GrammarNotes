@@ -10,6 +10,24 @@ import { NgxPaginationModule} from 'ngx-pagination';
 })
 export class GrammarNoteComponent  {
   title = 'JSON to Table Example';
+  sign = 'plus';  // or minus if you want that first
+  sign1 ='plus';
+   toggleSign() {
+     if(this.sign == 'plus') {
+       this.sign = 'minus';
+     } else {
+       this.sign = 'plus';
+     }
+  
+  }
+    toggleSigni() {
+     if(this.sign1 == 'plus') {
+       this.sign1 = 'minus';
+     } else {
+       this.sign1 = 'plus';
+     }
+  
+  }
   constructor (private httpService: HttpClient) { }
   arrImage: string [];
   ngOnInit() { this.httpService.get('./assets/data/data.json').subscribe(

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {NgxPaginationModule} from 'ngx-pagination';
 
 const routes: Routes = [
-  { path: 'GrammarNotes', component: GrammarNoteComponent }
+  { path: 'grammarNotes', component: GrammarNoteComponent }
 ];
 
 @NgModule({
