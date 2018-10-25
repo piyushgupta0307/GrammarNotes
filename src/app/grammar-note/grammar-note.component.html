@@ -9,7 +9,7 @@
                 <div class="d2lt">
                 <ng-container *ngFor="let data of arrImage | paginate: {id: 'listing_pagination', itemsPerPage:20, currentPage: p }">
                         <div class="col1">
-                            <img src="{{data.path}}" class="img-fluid">
+                            <img src="{{data.Path}}" class="img-fluid" title="{{data.ToolTip}}">
                             <p class="ptitle">{{data.title}}</p>
                         </div>
                     </ng-container>
@@ -69,5 +69,3 @@
         </div>
     </div> 
 </div>
-
-<p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
