@@ -11,8 +11,11 @@
 
 .div1{
     margin-top: -1px;
-    width: 
+    width:1003px;
+    height:85px;
+
 }
+
 h1{
     font-size: 50px;
     word-break: break-all;
@@ -87,6 +90,7 @@ h1{
     border-left: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    
 }
 .d2rct{
     height: 269px;
