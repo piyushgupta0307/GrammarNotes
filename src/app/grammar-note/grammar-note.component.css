@@ -43,19 +43,7 @@ h1{
     width: 140px;
     padding: 5px 4px 3px 5px;
 }
-/*
-.left{
-    height: 540px;
-    max-width: 570px;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding-top:5px;
-    padding-left: 7px;
-    border-top: 1px solid black; 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-}  */
+
 .ptitle{
     font-size: 10px;
 }
@@ -86,19 +74,10 @@ h1{
 }
 .d2media{
     height: 215px;
-    border-top: 1px solid black; 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    
 }
 .d2rct{
     height: 269px;
     margin-top:2px; 
-  /*   border-top: 1px solid black; 
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; */
 }
 .pagn1{
     padding-right: 10px;

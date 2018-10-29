@@ -1,74 +1,80 @@
 <div class="main">
-    <div class="div1">
-        <img src="../assets/images/image 72.png" style="width: 1003px; height:85px;" class="div1Img">
-        <p class="header-text">GrammerNotes</p>
-        <p class="header-textp">Level Two</p>
+  <div class="div1">
+    <img src="../assets/images/image 72.png" style="width: 1003px; height:85px;" class="div1Img">
+    <p class="header-text">GrammerNotes</p>
+    <p class="header-textp">Level Two</p>
+  </div>
+  <div class="div2">
+    <div class="d2left">
+      <div class="d2lt">
+        <ng-container *ngFor="let data of arrImage | paginate: {id: 'listing_pagination', itemsPerPage:20, currentPage: p }; let i=index;">
+          <div class="col1" (click)="playVideo(data.video, i)">
+            <img src="{{data.Path}}" class="img-fluid" title="{{data.ToolTip}}">
+            <p class="ptitle">{{data.title}}</p>
+          </div>
+        </ng-container>
+      </div>
+      <div class="pag">
+        <pagination-controls maxSize="2" directionLinks="true" id="listing_pagination" (pageChange)="p=$event"></pagination-controls>
+      </div>
     </div>
-    <div class="div2">
-        <div class="d2left">
-                <div class="d2lt">
-                <ng-container *ngFor="let data of arrImage | paginate: {id: 'listing_pagination', itemsPerPage:20, currentPage: p }">
-                        <div class="col1">
-                            <img src="{{data.Path}}" class="img-fluid" title="{{data.ToolTip}}">
-                            <p class="ptitle">{{data.title}}</p>
-                        </div>
-                    </ng-container>
-                </div>   
-                <div class="pag">        
-                        <pagination-controls maxSize="2" directionLinks="true" id="listing_pagination" (pageChange)="p=$event"></pagination-controls>
-              
-                      </div>   
-         </div>
 
-        <div class="d2right">
-            <div class="d2media">
-                
-                <iframe class="embed-responsive-item" src="../assets/video/level2_lesson01_v2.mp4"></iframe>
-            </div>
-            <div><p class="icon"><span class="glyphicon glyphicon-triangle-left"></span><span  class="text">Please select a presentation from the gallery on the left.</span></p></div>
-            <div class="d2rct">
-                            <div class="topb">
-                              <div class="b1" data-toggle="collapse"
-                                  (click)="toggleSign()"
-                                  href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
-                                  <span class="glyphicon glyphicon-{{sign}}"></span> Download This Presentation
-                              </div>
-                              <div class="collapse" id="collapseExample">
-                                    <form>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio" checked>PowerPoint (Windows)</label>
-                                            </div>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio">PowerPoint (Mac)</label>
-                                            </div>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio">Keynote</label>
-                                              <button type="button" class="down">Download</button>
-                                            </div>
-                                          </form>
-                              </div>   
-                            </div>
-                            <div class="topb1">
-                              <div class="b1" data-toggle="collapse"
-                                (click)="toggleSigni()" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-                                  <span class="glyphicon glyphicon-{{sign1}}"></span>Handouts
-                              </div>
-                              <div class="collapse" id="collapseExample1">
-                                    <form>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio" checked>On your own activities</label>
-                                            </div>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio">Practice activities</label>
-                                            </div>
-                                            <div class="radio">
-                                              <label><input type="radio" name="optradio">Reviews</label>
-                                              <button type="button" class="down">Download</button>
-                                            </div>
-                                          </form>
-                              </div> 
-                            </div>      
-            </div>
+    <div class="d2right">
+      <div class="d2media">
+        <video #videoPlayer width="400" height="170" controls autoplay>
+          <source [src]="videoPath" type="video/mp4">
+        </video>
+      </div>
+      <div>
+        <p class="icon"><span class="glyphicon glyphicon-triangle-left"></span><span class="text">Please select a
+            presentation from the gallery on the left.</span></p>
+      </div>
+      <div class="d2rct">
+        <div class="topb">
+          <div class="b1" data-toggle="collapse" (click)="toggleSign(); setTypeOfDownload('winppt');" href="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            <span class="glyphicon glyphicon-{{sign}}"></span> Download This Presentation
+          </div>
+          <div class="collapse" id="collapseExample">
+            <form>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('winppt')" checked>PowerPoint
+                  (Windows)</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('macppt')">PowerPoint
+                  (Mac)</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('knmac')">Keynote</label>
+                <button type="button" class="down" (click)="download()">Download</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </div> 
+        <div class="topb1">
+          <div class="b1" data-toggle="collapse" (click)="toggleSigni(); setTypeOfDownload('oyo');" href="#collapseExample1"
+            aria-expanded="false" aria-controls="collapseExample1">
+            <span class="glyphicon glyphicon-{{sign1}}"></span>Handouts
+          </div>
+          <div class="collapse" id="collapseExample1">
+            <form>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('oyo')" checked>On your own
+                  activities</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('praa')">Practice
+                  activities</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="optradio" (click)="setTypeOfDownload('rev')">Reviews</label>
+                <button type="button" class="down" (click)="download()">Download</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
