@@ -18,14 +18,15 @@ export class GrammarNoteComponent {
   sign = 'plus';  // or minus if you want that first
   sign1 = 'plus';
   arrImage: string[];
-  videoPath: any = '../assets/video/level2_lesson01_v2.mp4';
+  
   typeOfDownload: any = "";
   downloadIndex = 0;
-
+  private assestsPath = "assets/";
+  videoPath: any = this.assestsPath+'video/level2_lesson01_v2.mp4';
   constructor(private httpService: HttpClient) { }
 
   ngOnInit() {
-    this.httpService.get('./assets/data/data.json').subscribe(
+    this.httpService.get(this.assestsPath+'/data/data.json').subscribe(
       data => {
         this.arrImage = data as string[];	 // FILL THE ARRAY WITH DATA.
         console.log(this.arrImage[1]);
@@ -58,7 +59,7 @@ export class GrammarNoteComponent {
 
   playVideo(videoPath, inex) {
     this.downloadIndex = inex;
-    this.videoPath = videoPath;
+    this.videoPath = this.assestsPath + videoPath;
     this.playVideoAuto();
   }
 
@@ -67,6 +68,6 @@ export class GrammarNoteComponent {
   }
   download() {
     let file = this.arrImage[this.downloadIndex][this.typeOfDownload];
-    window.open(file);
+    window.open(this.assestsPath+file);
   }
 }

@@ -1,6 +1,6 @@
 <div class="main">
   <div class="div1">
-    <img src="../assets/images/image 72.png" style="width: 1003px; height:85px;" class="div1Img">
+    <img src="assets/images/image 72.png" style="width: 1003px; height:85px;" class="div1Img">
     <p class="header-text">GrammerNotes</p>
     <p class="header-textp">Level Two</p>
   </div>
@@ -8,8 +8,8 @@
     <div class="d2left">
       <div class="d2lt">
         <ng-container *ngFor="let data of arrImage | paginate: {id: 'listing_pagination', itemsPerPage:20, currentPage: p }; let i=index;">
-          <div class="col1" (click)="playVideo(data.video, i)">
-            <img src="{{data.Path}}" class="img-fluid" title="{{data.ToolTip}}">
+          <div class="col1" >
+            <img src="{{assestsPath}}{{data.Path}}" class="img-fluid" title="{{data.ToolTip}}" (click)="playVideo(data.video, i)">
             <p class="ptitle">{{data.title}}</p>
           </div>
         </ng-container>
