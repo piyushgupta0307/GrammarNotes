@@ -2,6 +2,8 @@ import { ViewChild, Pipe, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpErrorResponse } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
+import {DomSanitizer} from "@angular/platform-browser";
+
 @Component({
   selector: 'app-grammar-note',
   templateUrl: './grammar-note.component.html',
@@ -21,9 +23,10 @@ export class GrammarNoteComponent {
   
   typeOfDownload: any = "";
   downloadIndex = 0;
-  private assestsPath = "assets/";
-  videoPath: any = this.assestsPath+'video/level2_lesson01_v2.mp4';
-  constructor(private httpService: HttpClient) { }
+  private assestsPath = "../../assets/";
+  public videoPath: any;
+  
+  constructor(private httpService: HttpClient, private domSanitizer : DomSanitizer) { }
 
   ngOnInit() {
     this.httpService.get(this.assestsPath+'/data/data.json').subscribe(
@@ -36,7 +39,7 @@ export class GrammarNoteComponent {
       }
     );
   }
-
+  
   toggleSign() {
     if (this.sign == 'plus') {
       this.sign = 'minus';
@@ -57,15 +60,17 @@ export class GrammarNoteComponent {
     this.typeOfDownload = type;
   }
 
-  playVideo(videoPath, inex) {
+  private playVideo(videoPat, inex) {
+    // this.videoPath= this.assestsPath + 'video/level2_lesson01_v2/index.html';
     this.downloadIndex = inex;
-    this.videoPath = this.assestsPath + videoPath;
-    this.playVideoAuto();
+    this.videoPath = this.assestsPath + videoPat;
+    this.domSanitizer.bypassSecurityTrustResourceUrl(this.videoPath);
+    // this.playVideoAuto();
   }
 
-  playVideoAuto() {
-    this.videoplayer.nativeElement.play();
-  }
+  // playVideoAuto() {
+  //   this.videoplayer.nativeElement.play();
+  // }
   download() {
     let file = this.arrImage[this.downloadIndex][this.typeOfDownload];
     window.open(this.assestsPath+file);
